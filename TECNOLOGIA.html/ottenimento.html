@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Come si ottiene l'energia nucleare</title>
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+  body{
+    min-height:100vh;
+    background:radial-gradient(circle at top,#151b3f,#05030f);
+    color:#f5f7ff;
+    overflow-x:hidden;
+  }
+
+  header{
+    position:sticky;top:0;
+    background:rgba(3,3,18,0.9);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(0,255,133,0.4);
+    box-shadow:0 0 20px rgba(0,255,133,0.35);
+    z-index:10;
+  }
+  .nav-inner{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0.8rem 1.4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .logo{
+    font-size:0.9rem;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:#b4ffd0;
+  }
+  a.back{
+    color:#d7faff;
+    text-decoration:none;
+    font-size:0.85rem;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+  }
+
+  main{
+    max-width:1000px;
+    margin:0 auto;
+    padding:2.5rem 1.4rem 3.5rem;
+  }
+
+  h1{
+    font-size:2.3rem;
+    margin-bottom:0.6rem;
+    background:linear-gradient(120deg,#00ff85,#00f5ff,#ffffff);
+    -webkit-background-clip:text;
+    color:transparent;
+    text-shadow:0 0 18px rgba(0,255,133,0.7);
+  }
+  .subtitle{
+    font-size:0.95rem;
+    color:#c4ffe0;
+    max-width:620px;
+    margin-bottom:2rem;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1.5rem;
+  }
+
+  .card{
+    padding:1.2rem 1.1rem;
+    border-radius:1rem;
+    background:radial-gradient(circle at top left,rgba(0,255,133,0.18),rgba(0,10,20,0.96));
+    border:1px solid rgba(0,255,133,0.45);
+    box-shadow:0 0 20px rgba(0,255,133,0.4);
+  }
+  .card h2{
+    font-size:1.05rem;
+    margin-bottom:0.4rem;
+  }
+  .card p{
+    font-size:0.9rem;
+    color:#e0fff0;
+    line-height:1.6;
+  }
+  .tag{
+    margin-top:0.7rem;
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.16em;
+    color:#9fffd0;
+  }
+
+  .image-strip{
+    margin-top:2rem;
+    display:flex;
+    gap:1rem;
+    overflow-x:auto;
+    padding-bottom:0.5rem;
+  }
+
+  .img-card{
+    min-width:220px;
+    border-radius:1rem;
+    padding:0.8rem;
+    background:radial-gradient(circle at top,#00ff8533,#000);
+    border:1px solid rgba(0,255,133,0.5);
+    box-shadow:0 0 18px rgba(0,255,133,0.6);
+  }
+
+  .img-fake{
+    height:130px;
+    border-radius:0.8rem;
+    background:
+      linear-gradient(135deg,rgba(0,255,133,0.5),transparent),
+      radial-gradient(circle at 20% 20%,rgba(255,255,255,0.9),transparent 55%),
+      #020814;
+  }
+
+  .img-label{
+    margin-top:0.4rem;
+    font-size:0.8rem;
+    color:#c4ffe0;
+  }
+
+  .particle{
+    position:fixed;
+    width:7px;height:7px;
+    border-radius:50%;
+    background:rgba(0,255,133,0.7);
+    opacity:0.7;
+    animation:floatUp linear infinite;
+    z-index:-1;
+  }
+
+  @keyframes floatUp{
+    0%{transform:translateY(100vh);opacity:0;}
+    10%{opacity:0.8;}
+    90%{opacity:0.8;}
+    100%{transform:translateY(-10vh);opacity:0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="logo">Nucleare · ottenimento</div>
+    <a class="back" href="index.html">← torna al portale</a>
+  </div>
+</header>
+
+<main>
+  <h1>Come si ottiene l'energia nucleare?</h1>
+  <p class="subtitle">
+    L’energia nucleare oggi si ottiene quasi esclusivamente tramite <strong>fissione controllata</strong>.
+    In futuro si punta anche alla <strong>fusione</strong>, che è ancora in fase di ricerca.
+  </p>
+
+  <div class="grid">
+
+    <img src="CENTRALE termoelettrica.jpg" alt="">
+
+    <div class="card">
+      <h2>1. Estrazione e preparazione dell’uranio</h2>
+      <p>
+        Il minerale di uranio viene estratto, raffinato e arricchito per aumentare la percentuale
+        dell’isotopo fissile (U-235). Successivamente viene trasformato in piccole pastiglie ceramiche
+        inserite in lunghe barre metalliche.
+      </p>
+      <div class="tag">Ciclo del combustibile</div>
+    </div>
+
+    <div class="card">
+      <h2>2. Inserimento nel reattore</h2>
+      <p>
+        Le barre di combustibile vengono immerse in un moderatore (acqua o grafite) che rallenta i neutroni.
+        Le barre di controllo regolano la potenza assorbendo parte dei neutroni.
+      </p>
+      <div class="tag">Reazione controllata</div>
+    </div>
+
+    <div class="card">
+      <h2>3. La fissione</h2>
+      <p>
+        Quando un neutrone colpisce un nucleo di uranio, questo si divide in due frammenti più leggeri,
+        liberando calore e altri neutroni. Il calore prodotto serve a generare vapore.
+      </p>
+      <div class="tag">Cuore del reattore</div>
+    </div>
+
+    <div class="card">
+      <h2>4. La fusione (futuro)</h2>
+      <p>
+        La fusione unisce nuclei leggeri, come isotopi dell’idrogeno, liberando energia.
+        È il processo che alimenta le stelle. I reattori a fusione sperimentali usano campi magnetici
+        per confinare un plasma caldissimo.
+      </p>
+      <div class="tag">Ricerca avanzata</div>
+    </div>
+
+  </div>
+
+  <div class="image-strip">
+    <div class="img-card">
+      <div class="img-fake"></div>
+      <div class="img-label">Barre di combustibile</div>
+    </div>
+
+    <div class="img-card">
+      <div class="img-fake"></div>
+      <div class="img-label">Schema di reattore</div>
+    </div>
+
+    <div class="img-card">
+      <div class="img-fake"></div>
+      <div class="img-label">Tokamak (fusione)</div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  for(let i=0;i<35;i++){
+    const p=document.createElement("div");
+    p.className="particle";
+    p.style.left=Math.random()*100+"vw";
+    p.style.animationDuration=10+Math.random()*16+"s";
+    p.style.animationDelay=-Math.random()*20+"s";
+    document.body.appendChild(p);
+  }
+</script>
+
+</body>
+</html>
